@@ -1,0 +1,192 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+video{
+    height: 120vh;
+    filter: brightness(40%);
+    position: absolute;
+    z-index: -1;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#leftDiv{
+    width: 770px;
+    height: 100vh;
+    /* background-color: rgb(43, 0, 255); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+#rightDiv{
+    width: 765px;
+    height: 100vh;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    width: 150px;
+    filter: saturate(600%) brightness(150%) drop-shadow(0.5px -1px 0px rgb(251, 67, 67)) drop-shadow(1px 1px 0px rgb(143, 241, 86)) drop-shadow(0px 0px 4px black);
+    animation-name: waveAnime;
+    animation-duration: 10s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+#pageDescription{
+    font-size: 18px;
+    width: 95%;
+    height: 40%;
+    overflow:scroll;
+    text-align: justify;
+    text-indent: 120px;
+    letter-spacing: 0.2vw;
+    word-spacing: 0.1vw;
+    text-shadow: 1px 1px 0.5px black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    filter: brightness(90%);
+}
+/* #pageDescription::-webkit-scrollbar{
+    display: none;
+} */
+#webpageName{
+    font-family: 'Beau Rivage', cursive;
+    font-size: 4vw;
+    text-shadow: 2px 2px 2px black;
+    filter: brightness(120%);
+    /* background-image: url(../assets/videos/oceanblue.mp4);
+    -webkit-background-clip: text;
+    color: transparent; */
+    /* color: purple; */
+}
+
+@keyframes waveAnime {
+    0%{
+        transform: rotate(-40deg) 
+        translate(20vw,10vw) 
+    }
+    20%{
+        transform: rotate(20deg);
+    }
+    40%{
+        transform: rotate(-20deg);
+    }
+    60%{
+        transform: rotate(40deg);
+    }
+    70%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(40deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
+}
+
+#form{
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.41);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+h1{
+    color: white;
+    font-weight: bold;
+}
+.inp{
+    width: 85%;
+    height: 3vw;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    background-image: linear-gradient(75deg,white,rgb(135, 135, 187),black);
+    background-size: 800px;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.inp::placeholder{
+    background-image: linear-gradient(75deg,skyblue,darkblue,white);
+    background-size: 800px;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    cursor:text;
+}
+#button{
+    border: 2px solid royalblue;
+    width: 20vw;
+    border-radius: 10px;
+    cursor: pointer;
+    /* background-color: black; */
+    height: 40px;
+    background-image: url(../assets/images/logo.png);
+    background-size: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 0.5px 0.5px black;
+    transition: all 0.5s;
+    color: black;
+}
+#button:hover{
+    background-size: 20px;
+    background-position: 600px;
+    background-repeat: repeat;
+   
+}
+#area{
+    width: 80%;
+    height: 3vw;
+    border-radius: 8px;
+    /* background-color:rgb(249, 223, 223) ; */
+    border-bottom: 2px;
+    /* outline: none; */
+    font-size: 18px;
+    font-weight: bold;
+    background-size: 800px;
+    /* -webkit-background-clip: text; */
+    color:black;
+
+}
+a{
+    color: rgb(176, 82, 82);
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 2px black;
+}
